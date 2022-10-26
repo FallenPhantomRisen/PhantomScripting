@@ -156,3 +156,16 @@ game:GetService("Players").LocalPlayer.Character:FindFirstChild("Wooden Sword").
 	end,
 })
 
+
+-- Auto-Rebirth
+
+local Tab = Window:CreateTab("Rebirth")
+local Section = Tab:CreateSection("Rebirth")
+local Button = Tab:CreateButton({
+	Name = "Rebirth!",
+	Callback = function()
+		game:GetService("ReplicatedStorage").RemoteEvents.Rebirth:FireServer()
+	end,
+})
+
+
