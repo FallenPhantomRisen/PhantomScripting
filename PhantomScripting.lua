@@ -7,17 +7,17 @@ KeySystem = false, -- Set this to true to use our key system
 KeySettings = {
 	Title = "Phantom Hub",
 	Subtitle = "Key System",
-	Note = "Join the discord (discord.gg/)",
+	Note = "Join the discord (discord.gg/sirius)",
 	Key = "ABCDEF"
 }
 })
 
 -- Guide
 
-local Tab = Window:CreateTab("Credits")
-local Section = Tab:CreateSection("Credits")
+local Tab = Window:CreateTab("Guide")
+local Section = Tab:CreateSection("Guide")
 local Paragraph = Tab:CreateParagraph({Title = "Credits", Content = "Script made by RebornPhantom, UI is Rayfield Interface Suite!"})
-
+local Paragraph = Tab:CreateParagraph({Title = "Credits", Content = "Join the Discord at discord.gg/vGwPPNSvaJ"})
 
 
 -- Main
@@ -170,5 +170,7 @@ local Button = Tab:CreateButton({
 		game:GetService("ReplicatedStorage").RemoteEvents.Rebirth:FireServer()
 	end,
 })
+
+
 
 
