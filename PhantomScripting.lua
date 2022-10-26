@@ -140,3 +140,17 @@ game:GetService("ReplicatedStorage").RemoteEvents.SwordPurchased:FireServer(unpa
 
 	end,
 })
+local Tab = Window:CreateTab("Money Glitch")
+local Section = Tab:CreateSection("Money Glitch")
+local Button = Tab:CreateButton({
+	Name = "Generate Cash",
+	Callback = function()
+		local args = {
+    [1] = workspace.Map.Battlebots:FindFirstChild("Enemy Battle Robot").Humanoid,
+    [2] = "150000",
+    [3] = 100000000
+}
+
+game:GetService("Players").LocalPlayer.Character:FindFirstChild("Wooden Sword").Handle.RemoteEvent:FireServer(unpack(args))
+	end,
+})
