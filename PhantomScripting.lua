@@ -150,8 +150,8 @@ local Button = Tab:CreateButton({
 	Callback = function()
 		local args = {
     [1] = workspace.Map.Battlebots:FindFirstChild("Enemy Battle Robot").Humanoid,
-    [2] = "1500000000",
-    [3] = 1000000000
+    [2] = "150000000000000",
+    [3] = 100000000000000
 }
 
 game:GetService("Players").LocalPlayer.Character:FindFirstChild("Wooden Sword").Handle.RemoteEvent:FireServer(unpack(args))
