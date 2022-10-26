@@ -14,8 +14,8 @@ KeySettings = {
 
 -- Guide
 
-local Tab = Window:CreateTab("Guide")
-local Section = Tab:CreateSection("Guide")
+local Tab = Window:CreateTab("Credits")
+local Section = Tab:CreateSection("Credits")
 local Paragraph = Tab:CreateParagraph({Title = "Credits", Content = "Script made by RebornPhantom, UI is Rayfield Interface Suite!"})
 
 
