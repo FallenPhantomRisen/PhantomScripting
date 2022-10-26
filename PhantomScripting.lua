@@ -16,9 +16,6 @@ KeySettings = {
 
 local Tab = Window:CreateTab("Guide")
 local Section = Tab:CreateSection("Guide")
-local Paragraph = Tab:CreateParagraph({Title = "Main Guide", Content = "In order to use the Main Upgrades, you need to open the Ingame Upgrade Menu for your robot, and navigate to the Upgrade you'd like to Use First!"})
-local Paragraph = Tab:CreateParagraph({Title = "Sword Guide", Content = "In order to use the Sword Upgrade, you need to open the Ingame Sword Menu for your robot."})
-local Paragraph = Tab:CreateParagraph({Title = "Infinite Money Glitch", Content = "In order to generate infinite money, simply equip the wooden sword, and press the infinite money button!"})
 local Paragraph = Tab:CreateParagraph({Title = "Credits", Content = "Script made by RebornPhantom, UI is Rayfield Interface Suite!"})
 
 
@@ -26,7 +23,7 @@ local Paragraph = Tab:CreateParagraph({Title = "Credits", Content = "Script made
 -- Main
 local Tab = Window:CreateTab("Main")
 local Section = Tab:CreateSection("Upgrades")
-
+local Paragraph = Tab:CreateParagraph({Title = "Main Guide", Content = "In order to use the Main Upgrades, you need to open the Ingame Upgrade Menu for your robot, and navigate to the Upgrade you'd like to Use First!"})
 
 local Button = Tab:CreateButton({
 	Name = "Upgrade Head for 10$",
@@ -128,6 +125,7 @@ local Button = Tab:CreateButton({
 
 local Tab = Window:CreateTab("Sword")
 local Section = Tab:CreateSection("Sword")
+local Paragraph = Tab:CreateParagraph({Title = "Sword Guide", Content = "In order to use the Sword Upgrade, you need to open the Ingame Sword Menu for your robot."})
 local Button = Tab:CreateButton({
 	Name = "Max Sword for 10$",
 	Callback = function()
@@ -141,8 +139,12 @@ game:GetService("ReplicatedStorage").RemoteEvents.SwordPurchased:FireServer(unpa
 
 	end,
 })
+
+-- Infinite Money
+
 local Tab = Window:CreateTab("Money Glitch")
 local Section = Tab:CreateSection("Money Glitch")
+local Paragraph = Tab:CreateParagraph({Title = "Infinite Money Glitch", Content = "In order to generate infinite money, simply equip the wooden sword, and press the infinite money button!"})
 local Button = Tab:CreateButton({
 	Name = "Generate Cash",
 	Callback = function()
@@ -161,6 +163,7 @@ game:GetService("Players").LocalPlayer.Character:FindFirstChild("Wooden Sword").
 
 local Tab = Window:CreateTab("Rebirth")
 local Section = Tab:CreateSection("Rebirth")
+local Paragraph = Tab:CreateParagraph({Title = "Rebirth Guide!", Content = "Step on the very first button, and hit the button to Rebirth!"})
 local Button = Tab:CreateButton({
 	Name = "Rebirth!",
 	Callback = function()
