@@ -7,7 +7,7 @@ KeySystem = false, -- Set this to true to use our key system
 KeySettings = {
 	Title = "Phantom Hub",
 	Subtitle = "Key System",
-	Note = "Join the discord (discord.gg/sirius)",
+	Note = "Join the discord (discord.gg/)",
 	Key = "ABCDEF"
 }
 })
