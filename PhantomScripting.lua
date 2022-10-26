@@ -18,7 +18,7 @@ local Tab = Window:CreateTab("Guide")
 local Section = Tab:CreateSection("Guide")
 local Paragraph = Tab:CreateParagraph({Title = "Main Guide", Content = "In order to use the Main Upgrades, you need to open the Ingame Upgrade Menu for your robot, and navigate to the Upgrade you'd like to Use First!"})
 local Paragraph = Tab:CreateParagraph({Title = "Sword Guide", Content = "In order to use the Sword Upgrade, you need to open the Ingame Sword Menu for your robot."})
-local Paragraph = Tab:CreateParagraph({Title = "Infinite Money Glitch", Content = "In order to generate infinite money, simply equip the wooden sword, and press the button!"})
+local Paragraph = Tab:CreateParagraph({Title = "Infinite Money Glitch", Content = "In order to generate infinite money, simply equip the wooden sword, and press the infinite money button!"})
 local Paragraph = Tab:CreateParagraph({Title = "Credits", Content = "Script made by RebornPhantom, UI is Rayfield Interface Suite!"})
 
 
