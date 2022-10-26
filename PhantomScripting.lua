@@ -149,9 +149,21 @@ local Button = Tab:CreateButton({
 		local args = {
     [1] = workspace.Map.Battlebots:FindFirstChild("Enemy Battle Robot").Humanoid,
     [2] = "150000",
-    [3] = 100000000
+    [3] = 100000
 }
 
 game:GetService("Players").LocalPlayer.Character:FindFirstChild("Wooden Sword").Handle.RemoteEvent:FireServer(unpack(args))
+	end,
+})
+
+-- Advertising
+
+local Tab = Window:CreateTab("Advertising")
+local Section = Tab:CreateSection("Advertising")
+local Button = Tab:CreateButton({
+	Name = "Advertise The Script!",
+	Callback = function()
+		
+end
 	end,
 })
