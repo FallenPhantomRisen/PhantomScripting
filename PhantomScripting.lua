@@ -156,14 +156,3 @@ game:GetService("Players").LocalPlayer.Character:FindFirstChild("Wooden Sword").
 	end,
 })
 
--- Advertising
-
-local Tab = Window:CreateTab("Advertising")
-local Section = Tab:CreateSection("Advertising")
-local Button = Tab:CreateButton({
-	Name = "Advertise The Script!",
-	Callback = function()
-		
-end
-	end,
-})
