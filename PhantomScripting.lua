@@ -19,7 +19,7 @@ local Tab = Window:CreateTab("Guide")
 local Section = Tab:CreateSection("Guide")
 local Paragraph = Tab:CreateParagraph({Title = "Credits", Content = "Script made by RebornPhantom, UI is Rayfield Interface Suite!"})
 local Paragraph = Tab:CreateParagraph({Title = "Credits", Content = "Join the Discord at discord.gg/vGwPPNSvaJ"})
-local Paragraph = Tab:CreateParagraph({Title = "Changlelogs", Content = "V0.0.4 Due to staff detecting Infinite Money Hack V2, It's been removed for safety purposes."})
+local Paragraph = Tab:CreateParagraph({Title = "Changlelogs", Content = "V0.0.5 As an apology for removing the MoneyHackV2, I've added a Gem hack to generate large amounts of gems, Enjoy! -Phantom"})
 
 -- Main
 local Tab = Window:CreateTab("Main")
@@ -182,8 +182,14 @@ local Button = Tab:CreateButton({
 game:GetService("Players").LocalPlayer.Character:FindFirstChild("Wooden Sword").Handle.RemoteEvent:FireServer(unpack(args))
 	end,
 })
-
-
+local Paragraph = Tab:CreateParagraph({Title = "Copious Gem Glitch", Content = "In order to generate Large amounts of Gems, press the Copious Gems button!"})
+local Button = Tab:CreateButton({
+	Name = "Button Example",
+	Callback = function()
+		game:GetService("ReplicatedStorage").RemoteEvents.BattleBotLevelUp:FireServer("Head",0,-9999999,"Upgrade1")
+			game:GetService("ReplicatedStorage").RemoteFunctions.UnlockUpgrades:InvokeServer(-9999999,"Head")
+	end,
+})
 -- Auto-Rebirth
 
 local Tab = Window:CreateTab("Rebirth")
@@ -253,5 +259,6 @@ game:GetService("ReplicatedStorage").RemoteFunctions.PlaytimeRewardClaimed:Invok
 
 	end,
 })
+
 
 
