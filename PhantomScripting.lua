@@ -188,7 +188,7 @@ local Button = Tab:CreateButton({
 	Name = "Infinite Money v2",
 	Callback = function()
 		game:GetService("ReplicatedStorage").RemoteEvents.BattleBotLevelUp:FireServer("Head",0,-9999999,"Upgrade1")
-			game:GetService("ReplicatedStorage").RemoteFunctions.UnlockUpgrades:InvokeServer(-9999999,"Head")
+		game:GetService("ReplicatedStorage").RemoteFunctions.UnlockUpgrades:InvokeServer(-9999999,"Head")
 
 	end,
 })
