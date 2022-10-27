@@ -182,15 +182,7 @@ local Button = Tab:CreateButton({
 game:GetService("Players").LocalPlayer.Character:FindFirstChild("Wooden Sword").Handle.RemoteEvent:FireServer(unpack(args))
 	end,
 })
-local Paragraph = Tab:CreateParagraph({Title = "Infinite Money Glitchv2", Content = "This Version of the Glitch is likely already detected by Devs, but feel free to use it, at your own Risk!"})
-local Button = Tab:CreateButton({
-	Name = "Infinite Money v2",
-	Callback = function()
-		game:GetService("ReplicatedStorage").RemoteEvents.BattleBotLevelUp:FireServer("Head",0,-9999999,"Upgrade1")
-		game:GetService("ReplicatedStorage").RemoteFunctions.UnlockUpgrades:InvokeServer(-9999999,"Head")
 
-	end,
-})
 
 -- Auto-Rebirth
 
