@@ -182,7 +182,6 @@ local Button = Tab:CreateButton({
 game:GetService("Players").LocalPlayer.Character:FindFirstChild("Wooden Sword").Handle.RemoteEvent:FireServer(unpack(args))
 	end,
 })
-local Section = Tab:CreateSection(MoneyGlitchv2)
 local Paragraph = Tab:CreateParagraph({Title = "Infinite Money Glitchv2", Content = "This Version of the Glitch is likely already detected by Devs, but feel free to use it, at your own Risk!"})
 local Button = Tab:CreateButton({
 	Name = "Infinite Money v2",
