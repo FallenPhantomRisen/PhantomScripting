@@ -150,8 +150,8 @@ local Button = Tab:CreateButton({
 	Callback = function()
 		local args = {
     [1] = workspace.Map.Battlebots:FindFirstChild("Enemy Battle Robot").Humanoid,
-    [2] = "150000000000000",
-    [3] = 100000000000000
+    [2] = "150000",
+    [3] = 100000
 }
 
 game:GetService("Players").LocalPlayer.Character:FindFirstChild("Wooden Sword").Handle.RemoteEvent:FireServer(unpack(args))
@@ -172,5 +172,60 @@ local Button = Tab:CreateButton({
 })
 
 
+-- Claim All Packages
 
+local Tab = Window:CreateTab("Claim Packages")
+local Section = Tab:CreateSection("Claim Packages")
+local Paragraph = Tab:CreateParagraph({Title = "Claim your Playtime Packages!", Content = "Straightforward, don't waste your time clicking those packages, click this to autocomplete all of them!"})
+local Button = Tab:CreateButton({
+	Name = "Claim!",
+	Callback = function()
+		local args = {
+    [1] = 1
+}
+
+game:GetService("ReplicatedStorage").RemoteFunctions.PlaytimeRewardClaimed:InvokeServer(unpack(args))
+local args = {
+    [1] = 2
+}
+
+game:GetService("ReplicatedStorage").RemoteFunctions.PlaytimeRewardClaimed:InvokeServer(unpack(args))
+local args = {
+    [1] = 3
+}
+
+game:GetService("ReplicatedStorage").RemoteFunctions.PlaytimeRewardClaimed:InvokeServer(unpack(args))
+local args = {
+    [1] = 4
+}
+
+game:GetService("ReplicatedStorage").RemoteFunctions.PlaytimeRewardClaimed:InvokeServer(unpack(args))
+local args = {
+    [1] = 2
+}
+
+game:GetService("ReplicatedStorage").RemoteFunctions.PlaytimeRewardClaimed:InvokeServer(unpack(args))
+local args = {
+    [1] = 5
+}
+
+game:GetService("ReplicatedStorage").RemoteFunctions.PlaytimeRewardClaimed:InvokeServer(unpack(args))
+local args = {
+    [1] = 6
+}
+
+game:GetService("ReplicatedStorage").RemoteFunctions.PlaytimeRewardClaimed:InvokeServer(unpack(args))
+local args = {
+    [1] = 7
+}
+
+game:GetService("ReplicatedStorage").RemoteFunctions.PlaytimeRewardClaimed:InvokeServer(unpack(args))
+local args = {
+    [1] = 8
+}
+
+game:GetService("ReplicatedStorage").RemoteFunctions.PlaytimeRewardClaimed:InvokeServer(unpack(args))
+
+	end,
+})
 
