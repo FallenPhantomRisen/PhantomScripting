@@ -184,7 +184,7 @@ game:GetService("Players").LocalPlayer.Character:FindFirstChild("Wooden Sword").
 })
 local Paragraph = Tab:CreateParagraph({Title = "Copious Gem Glitch", Content = "In order to generate Large amounts of Gems, press the Copious Gems button!"})
 local Button = Tab:CreateButton({
-	Name = "Button Example",
+	Name = "Copious Gems",
 	Callback = function()
 		game:GetService("ReplicatedStorage").RemoteEvents.BattleBotLevelUp:FireServer("Head",0,-9999999,"Upgrade1")
 			game:GetService("ReplicatedStorage").RemoteFunctions.UnlockUpgrades:InvokeServer(-9999999,"Head")
