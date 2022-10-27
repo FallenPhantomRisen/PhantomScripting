@@ -19,7 +19,7 @@ local Tab = Window:CreateTab("Guide")
 local Section = Tab:CreateSection("Guide")
 local Paragraph = Tab:CreateParagraph({Title = "Credits", Content = "Script made by RebornPhantom, UI is Rayfield Interface Suite!"})
 local Paragraph = Tab:CreateParagraph({Title = "Credits", Content = "Join the Discord at discord.gg/vGwPPNSvaJ"})
-
+local Paragraph = Tab:CreateParagraph({Title = "Changlelogs", Content = "Starting from now, V0.03, This Changelog will be updated with every update. To mark for now, V0.0.3 Added the Money Glitch V2, which is volatile, but effective; use at your own risk!"})
 
 -- Main
 local Tab = Window:CreateTab("Main")
