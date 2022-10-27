@@ -225,6 +225,9 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").RemoteFunctions.PlaytimeRewardClaimed:InvokeServer(unpack(args))
+			
+game:GetService("ReplicatedStorage").RemoteFunctions.RewardClaimed:InvokeServer()
+
 
 	end,
 })
