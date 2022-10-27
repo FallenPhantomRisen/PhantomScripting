@@ -121,22 +121,28 @@ local Button = Tab:CreateButton({
 		Rayfield:Destroy()
 	end,
 })
-local Toggle = Tab:CreateToggle({
+local Button = Tab:CreateButton({
 	Name = "Speed",
-	CurrentValue = false,
-	Flag = "Speed1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-	Callback = function(Value)
+	Callback = function()
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150
-    		-- The variable (Value) is a boolean on whether the toggle is true or false
 	end,
 })
-local Toggle = Tab:CreateToggle({
-	Name = "JumpPower",
-	CurrentValue = false,
-	Flag = "Jump1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-	Callback = function(Value)
+local Button = Tab:CreateButton({
+	Name = "Jump Power",
+	Callback = function()
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150
-    		-- The variable (Value) is a boolean on whether the toggle is true or false
+	end,
+})
+local Button = Tab:CreateButton({
+	Name = "Reset Speed",
+	Callback = function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
+	end,
+})
+local Button = Tab:CreateButton({
+	Name = "Reset Speed",
+	Callback = function()
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
 	end,
 })
 
