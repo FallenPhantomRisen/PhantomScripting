@@ -140,7 +140,7 @@ local Button = Tab:CreateButton({
 	end,
 })
 local Button = Tab:CreateButton({
-	Name = "Reset Speed",
+	Name = "Reset Jump Power",
 	Callback = function()
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
 	end,
